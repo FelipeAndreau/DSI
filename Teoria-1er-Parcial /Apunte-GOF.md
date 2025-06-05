@@ -4,18 +4,18 @@
 
 Los patrones creacionales proporcionan varios mecanismos de creación de objetos que incrementan la flexibilidad y la reutilización del código existente.
 
-# Patrones Singleton 
+## Patrones Singleton 
 
 Es un patrón de **diseño creacional** que nos permite asegurarnos de que una clase tenga una única instancia, a la vez que proporciona un **punto de acceso global a dicha instancia.**
 
 - El patron Singleton en criollo es el que se encarga de la creacion unica de una instancia, y que en caso de ser necesario y de re instanciar la clase, se re instancia la original, volviendo unica a esa instancia.
 
-# Estructura 
+### Estructura 
 
 ![image](https://github.com/user-attachments/assets/e67dadec-5cf7-44c0-90af-d157ccb47ff9)
 
 
-# Pseudocodigo 
+### Pseudocodigo 
 
 > En este ejemplo, la clase de conexión de la base de datos actúa como Singleton. Esta clase no tiene un constructor público, por lo que la única manera de obtener su objeto es invocando el método **obtenerInstancia**. Este método almacena en caché el primer objeto creado y lo devuelve en todas las llamadas siguientes
 
@@ -68,7 +68,7 @@ class Application is
         // variable `foo`.
 ```
 
-# Aplicabilidad 
+### Aplicabilidad 
 
  **Utiliza el patrón Singleton cuando una clase de tu programa tan solo deba tener una instancia disponible para todos los clientes; por ejemplo, un único objeto de base de datos compartido por distintas partes del programa.**
 
@@ -80,7 +80,7 @@ class Application is
 
 Ten en cuenta que siempre podrás ajustar esta limitación y permitir la creación de cierto número de instancias Singleton. La única parte del código que requiere cambios es el cuerpo del método **getInstance**.
 
-# Implementacion 
+### Implementacion 
 
 1. Añade un campo estático privado a la clase para almacenar la instancia Singleton.
 
@@ -92,7 +92,7 @@ Ten en cuenta que siempre podrás ajustar esta limitación y permitir la creaci�
 
 5. Repasa el código cliente y sustituye todas las llamadas directas al constructor de la instancia Singleton por llamadas a su método de creación estático.
 
-# Pros y Contras
+### Pros y Contras
 
 - Pros:
 > - Puedes tener la certeza de que una clase tiene una única instancia.
