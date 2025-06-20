@@ -19,3 +19,23 @@ Al registrar la venta, el sistema deberá verificar si, con esa venta incluida, 
 a) En base al enunciado anterior, realizar el modelo conceptual y luego de clases de sistema completando para cada clase: su nombre, atributos y adornos, y las operaciones; las cuales deberán ser asignadas aplicando patrones GRASP.
 Definir la/las operaciones para el alta de la venta incluyendo el comportamiento esperado para los casos
 
+![image](https://github.com/user-attachments/assets/dcdeb4a0-0cdc-4d50-87be-78c31b56a869)
+
+# Periodico Deportivo
+
+Un periódico deportivo quiere desarrollar una aplicación para gestionar la información de eventos ciclísticos de pruebas por equipo.
+
+El sistema tendrá información sobre los ciclistas, los equipos a los que pertenecen y las pruebas en las que cada equipo participa (se asume que en la prueba participan todos los integrantes del equipo).
+
+De cada ciclista se desea conocer su nombre, nacionalidad y fecha de nacimiento; así como el equipo al que pertenece, con la fecha de inicio y fin del contrato con ese equipo. El ciclista puede participar de muchos equipos a lo largo de su carrera deportiva.
+
+De cada equipo también se desea conocer su nombre, país al que representa, el nombre y apellido del director y las pruebas en las que ha participado.
+
+De las pruebas se conoce nombre, año de edición, cantidad de etapas, kilómetros totales y puesto que ocupó cada equipo en la clasificación final. Un dato adicional para las pruebas es conocer el nombre del ciclista que llegó primero a la meta.
+
+## Ejercicio 1
+
+a) Realizar el modelado conceptual y luego de clases de sistema completando para cada clase: su nombre, atributos y adornos, y las operaciones; las cuales deberán ser asignadas utilizando los patrones GRASP.
+Definir la/las operaciones para el alta de un equipo y para la inscripción de un equipo a una prueba
+Contemplar, en el modelo, la separación de los eventos generados por los usuarios a través de la interfaz de usuario, de las clases del sistema (Patrón Controller)
+
