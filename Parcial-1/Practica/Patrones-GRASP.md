@@ -39,3 +39,20 @@ a) Realizar el modelado conceptual y luego de clases de sistema completando para
 Definir la/las operaciones para el alta de un equipo y para la inscripción de un equipo a una prueba
 Contemplar, en el modelo, la separación de los eventos generados por los usuarios a través de la interfaz de usuario, de las clases del sistema (Patrón Controller)
 
+![image](https://github.com/user-attachments/assets/678d0fd0-1a7c-48d1-a31c-cddbf356338f)
+
+
+# Estacion Agua
+Se desea desarrollar un sistema que permita registrar información acerca de la calidad de las muestras de agua de distintas estaciones de toma.
+
+Las estaciones se identifican con un número, tienen un nombre, se registra dónde están situadas, cuál es la potencia y un rango de calidad del agua: pobre (promedio de 1 a 3), normal (promedio de 4 a 6), buena (promedio de 7 a 9), excelente (promedio de 10).
+Las ciudades están divididas en sectores. Cada sector posee un nombre, un código y tiene asignada dos estaciones, que actúan como titular y otra suplente. Si una acusa calidad de agua pobre, se le asigna la otra y viceversa.
+Los ciudadanos pueden consultar la calidad de agua que están recibiendo en cada momento de acuerdo con la estación que se encuentra activa en el sector donde está su domicilio.
+Se debe mantener un registro histórico de las calidades. En las estaciones se toman muestras cada 1 hora. De cada muestra se registra el día, la hora y valor (entre 1 y 10). Luego, la calidad de la estación se calcula como el promedio de los valores de las últimas tres muestras y se define entre pobre, normal, buena y excelente (Ver referencia de los valores).
+También es necesario tener el dato de la provincia donde se ubica la estación, para poder realizar estadísticas provinciales de la calidad de agua. A veces se requiere ver la ubicación de cada estación en un mapa.
+
+Ejercicios para recuperar Diagrama de Clases y Objetos
+
+a) En base al enunciado anterior, realizar el modelo conceptual y luego de clases de sistema completando para cada clase: su nombre, atributos y adornos, y las operaciones; las cuales deberán ser asignadas aplicando patrones GRASP.
+Definir la/las operaciones para el alta de una muestra (que también actualiza la calidad de la estación) y para armar y mostrar el mapa de estaciones de una provincia. Para esto último, suponer la utilización de los servicios de Google Map a través de un componente que se las brinda, y que se accede a través de una interfaz: ubicarPunto(latitud, longitud) que dibuja un punto en el mapa de acuerdo a las coordenadas y mostrarMapa(provincia) imagen del mapa de la provincia con los puntos ubicados.
+Contemplar, en el modelado, la separación de los eventos generados por los usuarios a través de la interfaz de usuario, de las clases del sistema (Patrón Controlador).
