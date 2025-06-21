@@ -51,7 +51,7 @@ Los ciudadanos pueden consultar la calidad de agua que están recibiendo en cada
 Se debe mantener un registro histórico de las calidades. En las estaciones se toman muestras cada 1 hora. De cada muestra se registra el día, la hora y valor (entre 1 y 10). Luego, la calidad de la estación se calcula como el promedio de los valores de las últimas tres muestras y se define entre pobre, normal, buena y excelente (Ver referencia de los valores).
 También es necesario tener el dato de la provincia donde se ubica la estación, para poder realizar estadísticas provinciales de la calidad de agua. A veces se requiere ver la ubicación de cada estación en un mapa.
 
-Ejercicios para recuperar Diagrama de Clases y Objetos
+## Ejercicios para recuperar Diagrama de Clases y Objetos
 
 a) En base al enunciado anterior, realizar el modelo conceptual y luego de clases de sistema completando para cada clase: su nombre, atributos y adornos, y las operaciones; las cuales deberán ser asignadas aplicando patrones GRASP.
 Definir la/las operaciones para el alta de una muestra (que también actualiza la calidad de la estación) y para armar y mostrar el mapa de estaciones de una provincia. Para esto último, suponer la utilización de los servicios de Google Map a través de un componente que se las brinda, y que se accede a través de una interfaz: ubicarPunto(latitud, longitud) que dibuja un punto en el mapa de acuerdo a las coordenadas y mostrarMapa(provincia) imagen del mapa de la provincia con los puntos ubicados.
@@ -59,3 +59,19 @@ Contemplar, en el modelado, la separación de los eventos generados por los usua
 
 ![image](https://github.com/user-attachments/assets/828c27d8-5452-4291-ae93-96f13d637abd)
 
+# Inscripcion Alumnos
+
+Se desea desarrollar un sistema que permita la inscripción de alumnos a las materias de una carrera.
+La carrera tiene muchas materias, cada materia tiene un nombre y pertenece a un nivel de la carrera (1, 2, 3, 4 o 5). Al inscribirse, el alumno puede elegir una comisión de entre 1 o muchas comisiones disponibles. Las comisiones tienen un nombre, un horario de cursada dado por día de la semana hora de inicio y fin, uno o más docentes a cargo y un aula donde se cursa (se puede cursar una o dos veces por semana). Al inscribirse en una materia, el alumno elige la comisión y el sistema registra fecha y asigna un número de inscripción. Las comisiones, para cada materia, tienen un cupo dado por la capacidad del aula asignada. La inscripción puede concretarse si la comisión elegida por el alumno, para la materia en cuestión, no excede el 10% del cupo disponible.
+
+## Ejercicios para recuperar Diagrama de Clases y Objetos
+
+Realizar primero el modelado conceptual, y luego de clases de sistema completando para cada clase: su nombre, atributos y operaciones; las cuales deberán ser asignadas utilizando los patrones GRASP.
+
+Definir la/las responsabilidades de las clases para los requerimientos:
+
+"El sistema deberá permitir inscribirse en una materia"
+
+"El sistema debe permitir dar de alta una comisión"
+
+Escribir el pseudocódigo de las operaciones más importantes resultantes de la implementación del requerimiento dado.
