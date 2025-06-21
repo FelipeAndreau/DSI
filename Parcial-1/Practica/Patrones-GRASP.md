@@ -81,3 +81,27 @@ Definir la/las responsabilidades de las clases para los requerimientos:
 Escribir el pseudocódigo de las operaciones más importantes resultantes de la implementación del requerimiento dado.
 
 ![image](https://github.com/user-attachments/assets/3a265fbc-8e83-4d93-b2f0-ad6a4dbbf9df)
+
+
+# Compra Trigo
+
+El proceso de compra de trigo para un molino harinero comienza con un contrato de compra, donde se especifica: el proveedor, la cantidad de toneladas, tipo de trigo (Blando o Duro), calidad del trigo (1, 2 o 3) y el lugar de entrega. Ningún contrato de compra puede exceder las 1000 toneladas.
+
+Una vez formalizado el contrato de compra, se reciben tantos camiones como sea necesario hasta alcanzar la cantidad de trigo acordada en el contrato. A cada camión se lo pesa en la balanza y se le realiza un análisis de la calidad del cereal que trae. Si la calidad cumple con el valor acordado en el contrato, se registra la recepción con: fecha, hora, patente, chofer, cantidad de toneladas, calidad del trigo, estado “Aceptado” y contrato al que pertenece el camión recibido; en caso contrario, la recepción queda en estado “Rechazada”.
+
+Una vez que se ha alcanzado la cantidad de toneladas estipulada en el contrato, se cierra el contrato de compra. Los contratos de compra cerrados deben ser pagados a los 10 días del cierre. Por esto, es necesario desarrollar un proceso que corra todos los días a las 22 horas y que: registre el pago de cada contrato que tenga 10 días de haberse cerrado al momento de la corrida y realice una transferencia conectándose a un sistema de pagos que recibe la cuenta destino y el monto a transferir para realizarla. Del pago se registra número, fecha, proveedor, contrato que se paga y monto pagado.
+
+Ejercicios 1
+
+Realizar primero el modelado conceptual y luego de clases de sistema completando para cada clase: su nombre, atributos y operaciones; las cuales deberán ser asignadas utilizando los patrones GRASP.
+
+Definir la/las responsabilidades de las clases para el requerimiento “El sistema deberá realizar el pago de todos los contratos que tengan 10 días de haberse cerrado”.
+
+Contemplar, en el modelo, la separación de los eventos generados por los usuarios a través de la interfaz de usuario, de las clases del sistema (Patrón Controller).
+
+Escribir el pseudocódigo de las operaciones más importantes resultantes de la implementación del requerimiento dado.
+
+
+
+
+
