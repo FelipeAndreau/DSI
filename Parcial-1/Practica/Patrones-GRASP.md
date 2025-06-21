@@ -101,6 +101,8 @@ Contemplar, en el modelo, la separación de los eventos generados por los usuari
 
 Escribir el pseudocódigo de las operaciones más importantes resultantes de la implementación del requerimiento dado.
 
+![image](https://github.com/user-attachments/assets/ba3c331d-7dfc-4c6f-984c-7366e3616af3)
+
 
 
 
