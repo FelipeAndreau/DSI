@@ -59,6 +59,10 @@ Contemplar, en el modelado, la separación de los eventos generados por los usua
 
 ![image](https://github.com/user-attachments/assets/828c27d8-5452-4291-ae93-96f13d637abd)
 
+# Ruben
+![image](https://github.com/user-attachments/assets/df022c99-87fc-40f5-a7bb-9be2b15c91be)
+
+
 # Inscripcion Alumnos
 
 Se desea desarrollar un sistema que permita la inscripción de alumnos a las materias de una carrera.
