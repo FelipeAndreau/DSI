@@ -104,6 +104,38 @@ Escribir el pseudocódigo de las operaciones más importantes resultantes de la 
 ![image](https://github.com/user-attachments/assets/ba3c331d-7dfc-4c6f-984c-7366e3616af3)
 
 
+# Sistema Monitoreo
+
+Se desea desarrollar un sistema de monitoreo para alarmas domiciliarias.
+
+El sistema deberá dejar registro de la fecha y hora de los movimientos detectados en los distintos ambientes monitoreados. También se desea saber si en el momento que se detectó el movimiento, se activó la sirena o no.
+
+Los ambientes definidos en el sistema pertenecen a un área de monitoreo. El usuario del sistema podrá definir tantas áreas como ambientes quiera. También podrá activar o desactivar un área para que suene la sirena cuando se detecte movimiento en algún ambiente de esa área. Los estados de las áreas entonces serán desactivada, activada y sonando.
+
+Por default, cuando se crea un área en el sistema, está desactivada. Si el área está activada y se detecta movimiento, pasa a estado sonando; hasta que el usuario la desactive. Si el área está desactivada, la sirena no suena por más que se detecte movimiento.
+
+De los ambientes se conoce el nombre, tamaño en m² y el área a la que pertenece. De las áreas se conoce el nombre y una descripción. Cada área puede tener más de un ambiente, pero el ambiente pertenece a una sola área.
+
+Cada ambiente tiene un sensor que genera una señal al momento de detectar el movimiento. El sensor tiene un número, sensibilidad (Alta, Media, Baja) y voltaje.
+
+La alarma se conecta a una sirena que debe sonar cuando se detecta movimiento y el área está activada.
+
+Ejercicios 1
+
+Realizar primero el modelado conceptual y luego de clases de sistema completando para cada clase: su nombre, atributos y operaciones; las cuales deberán ser asignadas utilizando los patrones GRASP.
+
+Definir la/las responsabilidades de las clases para el requerimiento:
+"El sistema debe registrar todos los movimientos y sonar la sirena si corresponde".
+
+Contemplar, en el modelo, la separación de los eventos generados por los usuarios a través de la interfaz de usuario, de las clases del sistema (Patrón Controller).
+
+Escribir el pseudocódigo de las operaciones más importantes.
+
+![image](https://github.com/user-attachments/assets/7210f228-7410-4360-9ad5-91d49c04acc5)
+
+
+
+
 
 
 
