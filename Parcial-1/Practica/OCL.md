@@ -44,3 +44,52 @@ Copiar código
 context Cliente::cuotasAdeudadas(): Integer
 body: self.suscripcion->collect(s | s.cuota->select(c | c.pagada = false and c.fechaVencimiento < getDate()))->flatten()->size()
 ```
+
+# Segundo Parcial
+
+![image](https://github.com/user-attachments/assets/1ed0ef8b-aa96-45c7-95ed-80050a3104ba)
+![image](https://github.com/user-attachments/assets/5c83e828-febd-4428-a117-ebee2558f32a)
+
+1. El origen no puede ser igual al destino
+```ocl
+context CartaPorte
+inv: self.origen <> self.destino
+```
+
+2. Neto de origen debe ser ≥ neto de destino
+```ocl
+context CartaPorte
+inv: self.netoO >= self.netoD
+```
+3. Neto de destino = bruto destino − tara destino
+```ocl
+context CartaPorte
+inv: self.netoD = self.brutoD - self.taraD
+```
+
+4. Si el contrato es de tipo “Camión”, la cantidad de cartas de porte = cantidad del contrato
+```ocl
+context Contrato
+inv: self.tipo = ContratoTipo::Camion implies
+     self.cartaPorte->size() = self.cantidad
+```
+
+5. Operación: cantidad de cartas de porte de un contrato
+```ocl
+context Contrato::cantidadCartas(): Integer
+body: self.cartaPorte->size()
+```
+
+6. Fecha de carta de porte ≥ fecha del contrato
+```ocl
+context CartaPorte
+inv: self.fecha >= self.contrato.fecha
+```
+Se navega a contrato para comparar fechas. Asumo que fecha es única en CartaPorte.
+
+7. Si alguna muestra tiene grado 3 → el contrato no tiene liquidación final
+```ocl
+context Contrato
+inv: self.cartaPorte.muestra->exists(m | m.grado = Grado::Grado3)
+     implies self.liquidacion->forAll(l | l.tipo <> LiqTipo::Final)
+```
