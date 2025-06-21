@@ -75,3 +75,5 @@ Definir la/las responsabilidades de las clases para los requerimientos:
 "El sistema debe permitir dar de alta una comisión"
 
 Escribir el pseudocódigo de las operaciones más importantes resultantes de la implementación del requerimiento dado.
+
+![image](https://github.com/user-attachments/assets/3a265fbc-8e83-4d93-b2f0-ad6a4dbbf9df)
