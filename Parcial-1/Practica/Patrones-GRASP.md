@@ -56,3 +56,6 @@ Ejercicios para recuperar Diagrama de Clases y Objetos
 a) En base al enunciado anterior, realizar el modelo conceptual y luego de clases de sistema completando para cada clase: su nombre, atributos y adornos, y las operaciones; las cuales deberán ser asignadas aplicando patrones GRASP.
 Definir la/las operaciones para el alta de una muestra (que también actualiza la calidad de la estación) y para armar y mostrar el mapa de estaciones de una provincia. Para esto último, suponer la utilización de los servicios de Google Map a través de un componente que se las brinda, y que se accede a través de una interfaz: ubicarPunto(latitud, longitud) que dibuja un punto en el mapa de acuerdo a las coordenadas y mostrarMapa(provincia) imagen del mapa de la provincia con los puntos ubicados.
 Contemplar, en el modelado, la separación de los eventos generados por los usuarios a través de la interfaz de usuario, de las clases del sistema (Patrón Controlador).
+
+![image](https://github.com/user-attachments/assets/828c27d8-5452-4291-ae93-96f13d637abd)
+
