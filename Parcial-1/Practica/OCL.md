@@ -93,3 +93,53 @@ context Contrato
 inv: self.cartaPorte.muestra->exists(m | m.grado = Grado::Grado3)
      implies self.liquidacion->forAll(l | l.tipo <> LiqTipo::Final)
 ```
+
+# Tercer Parcial
+
+![image](https://github.com/user-attachments/assets/06c2e20a-8cb9-460e-b324-9e7a29cf1faf)
+
+1. La nota final es el promedio de las notas de los exámenes
+```ocl
+context Cursada::notaFinal: Float
+derive: self.examen->collect(e | e.nota)->avg()
+```
+
+2. Año de carrera de la materia = año de la comisión
+```ocl
+context Cursada
+inv: self.materia.anoCarrera = self.comision.anoCarrera
+```
+
+3. Cada materia tiene 1 profesor Adjunto y 1 JTP
+```ocl
+context Materia
+inv: self.materiaProfesor->select(mp | mp.cargo = ProfesorCargo::Adjunto)->size() = 1 and
+     self.materiaProfesor->select(mp | mp.cargo = ProfesorCargo::JTP)->size() = 1
+```
+
+4. Las notas de los exámenes deben estar en el rango 1 a 10
+```ocl
+context Examen
+inv: self.nota >= 1 and self.nota <= 10
+```
+
+5. Si hay 10 faltas en asistencias, la cursada pasa a estado "Libre"
+```ocl
+context Cursada
+inv: self.asistencia->select(a | not a.presente)->size() = 10
+     implies self.estado = CursadaEstado::Libre
+```
+
+6. Una cursada no puede tener más de 4 exámenes
+```ocl
+context Cursada
+inv: self.examen->size() <= 4
+```
+
+7. Cantidad de cursantes por comisión en un año lectivo ≤ 30
+```ocl
+context Comision::cantCursantes(anio: Integer): Integer
+body: Cursada.allInstances()
+        ->select(c | c.comision = self and c.anioLectivo = anio)
+        ->size() <= 30
+```
