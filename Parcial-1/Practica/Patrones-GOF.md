@@ -6,3 +6,17 @@ a. Un servicio de emergencias de salud está organizado en una jerarquía de bas
 
 b. El cálculo de las comisiones para los vendedores de una empresa se realiza de la siguiente manera: suma de los importes de las ventas del mes multiplicado por 2% para vendedores mayorista y 3% para vendedores minoristas; más $10000 de viáticos para vendedores minoristas (los mayoristas no cobran viáticos); menos adelanto de sueldo que haya solicitado cada vendedor (independientemente de que sean mayoristas o minoristas) + bono de monto fijo $3000 para los vendedores mayoristas, los minoristas no cobran bono. Desarrollar la solución al proceso anterior utilizando el patrón de diseño que crea conveniente. Tener en cuenta que podrían incorporarse vendedores de otro tipo.
 
+![image](https://github.com/user-attachments/assets/9c32598d-9f13-4c71-86b5-179f966211ee)
+
+# Empresa con Clientes
+
+a. Una empresa desea beneficiar a sus clientes con descuentos que dependerán de su estado. Si el cliente tiene estado “Bien”, entonces se aplicará un descuento del 20%; si el cliente tiene estado “Regular” entonces el descuento es del 10%; y si tiene estado “Mal”, entonces no se aplicará descuento. Los descuentos se aplican sobre el importe total de la factura. Modelar la solución teniendo en cuenta que podrían incorporarse al sistema otros estados del cliente con su correspondiente descuento. Importante: se debe implementar la operación donde se utiliza el patrón.
+
+![image](https://github.com/user-attachments/assets/8815c1e3-9a2d-47de-ba85-0fc467b42f04)
+
+b. Dispongo de la clase “Utilidad”, cuyo método filtrar elimina de un array de objetos (propio de la clase) aquellos que no cumplen cierto criterio. El método filtrar asume que los objetos del array implementan el método cumpleCriterio() que informa si el objeto cumple o no con un criterio dado. Quiero usar la clase Utilidad para eliminar del array los objetos de tipo “Registro” que son inválidos. La clase Registro dispone del método esValido() para comprobar su validez. ¿Cómo usar la clase Utilidad para filtrar los objetos inválidos del tipo Registro que se incorporen al array?
+
+![image](https://github.com/user-attachments/assets/359b09c1-f5da-4ba7-b09d-35ac64037a90)
+
+
+
