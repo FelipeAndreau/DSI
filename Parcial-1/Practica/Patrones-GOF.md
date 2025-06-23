@@ -34,6 +34,10 @@ Hora en <<Ciudad>> : <<Hora>>
 
 a. Modelar el comportamiento de un servidor de mensajería. Cuando un cliente (remitente) envía un mensaje a otro cliente (receptor), el servidor lo recibe y lo encola para que el receptor lo pueda leer. Es necesario que los receptores no estén continuamente consultando por mensajes nuevos, sino que consulten al servidor solo en el caso de que haya uno o más mensajes suyos sin leer. Tener en cuenta que, una vez que el receptor lea el mensaje, el servidor lo elimina de la cola. Para simplificar la implementación, suponer que las conversaciones son entre 2 personas, aunque esas dos personas podrían estar conectadas desde más de un dispositivo.
 
+![image](https://github.com/user-attachments/assets/ac566795-e848-49a6-856e-7bba7675d63e)
+
 b. Se desea modelar el menú de un sistema, donde los ítems del menú pueden ser accesos a funciones del sistema, o submenús que son a su vez raíz de otros ítems.
 La operación a incluir es mostrarMenu(); donde la misma dibujará un rectángulo con el nombre de la función que representa (esto para los casos de ítems que son funciones del sistema); o mostrará los ítems de menú hijos en un orden establecido (esto para los casos que el ítem sea submenú).
+
+![image](https://github.com/user-attachments/assets/14b251c3-a964-465f-b44c-1c1056c3a018)
 
