@@ -67,13 +67,13 @@ inv: self.netoD = self.brutoD - self.taraD
 ```ocl
 context Contrato
 inv: self.tipo = ContratoTipo::Camion implies
-     self.cartaPorte->size() = self.cantidad
+     CartaPorte.allInstances()->select(cp | cp.contrato = self)->size() = self.cantidad
 ```
 
 5. Operación: cantidad de cartas de porte de un contrato
 ```ocl
 context Contrato::cantidadCartas(): Integer
-body: self.cartaPorte->size()
+body: CartaPorte.allInstances()->select(cp | cp.contrato = self)->size()
 ```
 
 6. Fecha de carta de porte ≥ fecha del contrato
@@ -85,9 +85,9 @@ Se navega a contrato para comparar fechas. Asumo que fecha es única en CartaPor
 
 7. Si alguna muestra tiene grado 3 → el contrato no tiene liquidación final
 ```ocl
-context Contrato
-inv: self.cartaPorte.muestra->exists(m | m.grado = Grado::Grado3)
-     implies self.liquidacion->forAll(l | l.tipo <> LiqTipo::Final)
+context CartaPorte
+inv: self.muestra.grado = Grado::grado3 implies
+     self.contrato.liquidacion->select(l | l.tipo = LiqTipo::Final)->isEmpty()
 ```
 
 # Tercer Parcial
