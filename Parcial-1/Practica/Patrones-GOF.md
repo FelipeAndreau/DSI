@@ -41,3 +41,14 @@ La operación a incluir es mostrarMenu(); donde la misma dibujará un rectángul
 
 ![image](https://github.com/user-attachments/assets/14b251c3-a964-465f-b44c-1c1056c3a018)
 
+# Monitoreo Mail - Vehiculo
+a. Tu equipo de trabajo está desarrollando un sistema de monitoreo con cámaras de seguridad. El sistema debe realizar una captura de la imagen y enviarla por correo al usuario cada vez que se detecte un movimiento en alguna de las cámaras. Realizar el diseño de la solución e implementación de las operaciones utilizando el patrón que crea conveniente.
+
+![image](https://github.com/user-attachments/assets/39261edc-3994-456e-894e-76461b79246f)
+
+
+b. Se tiene a la clase vehículo, cuyo comportamiento varía según el tipo. Por ejemplo, tocar bocina tiene un efecto si el vehículo es un auto, y otro distinto si es una bicicleta; frenar tiene un efecto si el vehículo es un auto y otro distinto si es un barco. Los comportamientos que interesan son tocar bocina, frenar y encender. Los tipos que interesan son auto, bicicleta y barco. Tener en cuenta que en un futuro puede haber más comportamientos y más tipos. Resolver el caso utilizando el patrón de diseño que crea conveniente.
+
+![image](https://github.com/user-attachments/assets/fdde20c3-2b9f-498e-81e8-57bc35732f27)
+
+# Accionistas
