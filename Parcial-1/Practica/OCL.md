@@ -134,8 +134,6 @@ inv: self.examen->size() <= 4
 
 7. Cantidad de cursantes por comisión en un año lectivo ≤ 30
 ```ocl
-context Comision::cantCursantes(anio: Integer): Integer
-body: Cursada.allInstances()
-        ->select(c | c.comision = self and c.anioLectivo = anio)
-        ->size() <= 30
+context CursadaController::altaCursada(anio: Integer, com: Comision, alu: Alumno, mat: Materia)
+pre: Cursada.allInstances()->select(c | c.comision = com and c.añoLectivo = anio and c.materia = mat)->size() <= 30
 ```
