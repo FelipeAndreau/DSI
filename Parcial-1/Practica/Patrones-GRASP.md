@@ -133,8 +133,9 @@ Escribir el pseudocódigo de las operaciones más importantes.
 
 ![image](https://github.com/user-attachments/assets/7210f228-7410-4360-9ad5-91d49c04acc5)
 
+# Biblioteca
 
-
+![image](https://github.com/user-attachments/assets/5236e189-3a1d-4351-9687-9c0ef148ce59)
 
 
 
