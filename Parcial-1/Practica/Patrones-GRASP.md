@@ -137,6 +137,9 @@ Escribir el pseudocódigo de las operaciones más importantes.
 
 ![image](https://github.com/user-attachments/assets/5236e189-3a1d-4351-9687-9c0ef148ce59)
 
+# Maquinaria
+
+![image](https://github.com/user-attachments/assets/bfb69270-b066-468e-8ccc-afec2d3c4695)
 
 
 
