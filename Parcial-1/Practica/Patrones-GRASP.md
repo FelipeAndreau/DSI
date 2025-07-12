@@ -141,5 +141,6 @@ Escribir el pseudocódigo de las operaciones más importantes.
 
 ![image](https://github.com/user-attachments/assets/bfb69270-b066-468e-8ccc-afec2d3c4695)
 
+<img width="1435" height="559" alt="image" src="https://github.com/user-attachments/assets/ef9fb20e-ef37-4a33-aa4d-b418ba3692f0" />
 
 
